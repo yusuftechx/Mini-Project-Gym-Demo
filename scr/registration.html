@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Agbeleshola Muscle Gym Joining Form</title>
+    <style>
+        /* CSS styling */
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #admission-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div id="admission-form">
+        <h2>Muscle Gym Membership Registration</h2>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required />
+            <br /><br />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <br /><br />
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required />
+            <br /><br />
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+            <br /><br />
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label>
+            <br /><br />
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" cols="30" rows="5" required></textarea>
+            <br /><br />
+            <fieldset>
+                <legend>Membership Details</legend>
+                <label for="joining-date">Joining Date:</label>
+                <input type="date" id="joining-date" name="joining-date" required />
+                <br /><br />
+                <label>Membership Type:</label>
+                <input type="radio" id="basic" name="membership-type" value="Basic" required />
+                <label for="basic">Basic (Gym)</label>
+                <input type="radio" id="gold" name="membership-type" value="Gold" required />
+                <label for="gold">Gold (Gym + Cardio)</label>
+                <input type="radio" id="premium" name="membership-type" value="Premium" required />
+                <label for="premium">Premium (Gym + Cardio + Crossfit)</label>
+                <br /><br />
+                <label for="duration">Duration:</label>
+                <select id="duration" name="duration" required>
+                    <option value="1">1 Month</option>
+                    <option value="3">3 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="12">1 Year</option>
+                </select>
+                <br /><br />
+                <label>Interested Add-ons:</label>
+                <input type="checkbox" id="yoga" name="add-on" value="yoga" />
+                <label for="yoga">Yoga</label>
+                <input type="checkbox" id="free-pt" name="add-on" value="free-pt" />
+                <label for="free-pt">Free PT Trial</label>
+                <input type="checkbox" id="zumba" name="add-on" value="zumba" />
+                <label for="zumba">Zumba</label>
+                <input type="checkbox" id="piloxing" name="add-on" value="piloxing" />
+                <label for="piloxing">Piloxing</label>
+                <input type="checkbox" id="diet" name="add-on" value="diet" />
+                <label for="diet">Diet Plan</label>
+            </fieldset>
+            <br /><br />
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <br />
+        <a href="index.html">Back</a>
+    </div>
+</body>
+</html>
